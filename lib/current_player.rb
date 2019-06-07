@@ -1,7 +1,8 @@
-def current_player = ["X", "O"]
-def turn_count = 1
-  current_player.each do |player|
-    puts "X || O"
-    turn_count += 1
+def turn_count(board)
+  turns = 0
+  board.each do |turn|
+    if turn == "X" || turn == "O"
+      turns += 1
+    end
   end
-end
+  turns
